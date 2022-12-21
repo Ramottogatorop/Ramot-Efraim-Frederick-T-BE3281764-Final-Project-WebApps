@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{template "general/header"}}
+</head>
+<body>
+    <div class="bg-gradient-to-r from-indigo-200 to-purple-200">
+        <section class="p-4 flex flex-col justify-center min-h-screen max-w-md mx-auto">
+          <div class="p-6 bg-sky-100 rounded">
+            <div class="flex items-center justify-center font-black m-3 mb-12">
+            <h1 class="tracking-wide text-3xl text-gray-900">Register account</h1>
+            </div>
+            <form method="post" action="/register/process" class="flex flex-col justify-center">
+              <div class="flex justify-between items-center mb-3">
+                <div class="inline-flex items-center self-start">
+                </div>
+              </div>
+              <label class="text-sm font-medium" for="fullname"><b>Fullname</b></label>
+              <input class="mb-3 px-2 py-1.5
+              mb-3 mt-1 block w-full px-2 py-1.5 border border-gray-300 rounded-md text-sm shadow-sm placeholder-gray-400
+              focus:outline-none
+              focus:border-sky-500
+              focus:ring-1
+              focus:ring-sky-500
+              focus:invalid:border-red-500 focus:invalid:ring-red-500" type="text" placeholder="Enter Fullname" name="fullname" id="Fullname" required />
+                 <label class="text-sm font-medium" for="email"><b>Email</b></label>
+                 <input class="mb-3 px-2 py-1.5
+                 mb-3 mt-1 block w-full px-2 py-1.5 border border-gray-300 rounded-md text-sm shadow-sm placeholder-gray-400
+                 focus:outline-none
+                 focus:border-sky-500
+                 focus:ring-1
+                 focus:ring-sky-500
+                 focus:invalid:border-red-500 focus:invalid:ring-red-500" type="text" placeholder="Enter Email" name="email" id="Email" required />
+                 <label class="text-sm font-medium" for="password"><b>Password</b></label>
+                 <input class="mb-3 px-2 py-1.5
+                 mb-3 mt-1 block w-full px-2 py-1.5 border border-gray-300 rounded-md text-sm shadow-sm placeholder-gray-400
+                 focus:outline-none
+                 focus:border-sky-500
+                 focus:ring-1
+                 focus:ring-sky-500
+                 focus:invalid:border-red-500 focus:invalid:ring-red-500"
+                   type="password"
+                   placeholder="Enter Password"
+                   name="password"
+                   id="password"
+                   required/>
+         
+                 <button class="px-4 py-1.5 rounded-md shadow-lg bg-gradient-to-r from-pink-600 to-red-600 font-medium text-gray-100 block transition duration-300" type="submit">Register
+                 </button>
+                 <div>
+                    <a  class="py-2 font-medium text-sm text-black-100" href="/login">Login</a></span>
+                  </div>
+               </div>
+              </form>
+          </div>
+        </section>
+    </div>
+</body>
+</html>
